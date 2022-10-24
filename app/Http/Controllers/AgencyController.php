@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Agency;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class AgencyController extends Controller
@@ -52,6 +53,7 @@ class AgencyController extends Controller
     public function newView()
     {
         $agencies=Agency::all();
-        return view("agency.new", ["agencies"=>$agencies]);
+        $users=User::all();
+        return view("agency.new", ["users"=>$users,"agencies"=>$agencies]);
     }
 }

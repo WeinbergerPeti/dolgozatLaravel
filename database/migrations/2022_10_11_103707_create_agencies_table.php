@@ -25,6 +25,7 @@ return new class extends Migration
         Agency::create(["name"=>"Zene ügynökség", "country"=>"Budapest", "type"=>"zene"]);
         Agency::create(["name"=>"Film ügynökség", "country"=>"Győr", "type"=>"film"]);
         Agency::create(["name"=>"Divat ügynökség", "country"=>"Budapest", "type"=>"divat"]);
+        Agency::create(["name"=>"Hírügynökség", "country"=>"USA", "type"=>"BBC"]);
     }
 
     /**
