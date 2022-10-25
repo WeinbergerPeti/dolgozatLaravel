@@ -24,7 +24,7 @@ class AgencyController extends Controller
     {
         $agency = new Agency();
         $agency->name = $request->name;
-        $agency->email= $request->email;
+        $agency->country= $request->country;
         $agency->type= $request->type;
         $agency->save();
     }
